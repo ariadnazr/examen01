@@ -1,0 +1,257 @@
+* {
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  width: 98%;
+      grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8";
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5%;
+}
+
+.area1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+}
+
+.area2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area2;
+}
+
+.area3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: area3;
+}
+
+.area4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: area4;
+}
+
+.area5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: area5;
+}
+
+.area6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: area6;
+}
+
+.area7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: area7;
+}
+
+.area8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: area8;
+}
+
+@media all and (max-width: 700px) {
+  body {
+        grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8";
+  }
+  .area1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: area1;
+  }
+  .area2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: area2;
+  }
+  .area3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: area3;
+  }
+  .area4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: area4;
+  }
+  .area5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: area5;
+  }
+  .area6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: area6;
+  }
+  .area7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: area7;
+  }
+  .area8 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: area8;
+  }
+}
+
+@-webkit-keyframes animBoton {
+  0% {
+    background-color: #bdb9b9;
+  }
+  100% {
+    background-color: #f8823e;
+  }
+}
+
+@keyframes animBoton {
+  0% {
+    background-color: #bdb9b9;
+  }
+  100% {
+    background-color: #f8823e;
+  }
+}
+
+.aa {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.boton {
+  background-color: #bdb9b9;
+  padding: 2%;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  margin: 1%;
+}
+
+.boton:hover {
+  -webkit-animation: animBoton 500ms;
+          animation: animBoton 500ms;
+  background-color: #f8823e;
+}
+
+#icons {
+  color: #f8823e;
+  font-size: 150%;
+}
+
+#icons:hover {
+  color: white;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 100%;
+}
+
+#sec {
+  padding: 5%;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  color: white;
+  font-size: 300%;
+}
+
+.titulo {
+  font-size: 500%;
+  color: #f8823e;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  color: black;
+  font-size: 100%;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.foto {
+  width: 250px;
+  height: 250px;
+  padding: 0%;
+  margin: 0%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.foto:hover {
+  opacity: 50%;
+}
+
+.fotoMain {
+  width: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.fotoMain:hover {
+  opacity: 50%;
+}
+
+#galeria div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+* {
+  background: #adcae6;
+}
+/*# sourceMappingURL=principal.css.map */

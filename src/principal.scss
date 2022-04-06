@@ -1,0 +1,19 @@
+@import 'config/variables';
+@import 'config/bloques';
+@import 'components/grid';
+@import 'components/botones';
+@import 'components/sections';
+@import 'components/galeria';
+
+*{
+    @extend %basicos;
+    
+    background: $Primary;
+}
+
+body{
+    @extend %gridareas;
+}
+
+
+

@@ -1,0 +1,27 @@
+$font-type: ('grande':500%, 'mid':300%, 'texto':100% );
+
+#sec{
+    padding: 5%;
+}
+
+h1{
+    font-family: $TitleFont;
+    color: white;
+    font-size: map-get($map: $font-type, $key:mid );
+}
+
+.titulo{
+    font-size: map-get($map: $font-type, $key:grande );
+    color: $Terciary;
+}
+
+p{
+    font-family: $TextFont;
+    color: black;
+    font-size: map-get($map: $font-type, $key:texto );
+
+}
+
+.comment{
+    @include setFlex(column, center, center);
+}

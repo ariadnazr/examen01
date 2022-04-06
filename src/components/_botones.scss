@@ -1,0 +1,47 @@
+@keyframes animBoton{
+    0%{
+        
+        background-color: $Secondary;
+    }
+
+    100%{
+        
+        background-color: $Terciary;
+    }
+}
+
+.aa{
+    margin-top: 5%;
+    @include setFlex (row, center, center);
+    
+}
+
+.boton{
+    background-color: $Secondary;
+    padding: 2%;
+    border-radius: 5px;
+    font-family: $TextFont;
+    color: white;
+    margin: 1%;
+
+    &:hover{
+        animation: animBoton 500ms;
+        background-color: $Terciary;
+    }
+}
+
+#icons{
+    color: $Terciary;
+    font-size: 150%;
+
+    &:hover{
+        color: white;
+    }
+}
+
+
+h2{
+    font-family: $TextFont;
+    font-size: 100%;
+}
+

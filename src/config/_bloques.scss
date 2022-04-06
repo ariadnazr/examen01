@@ -1,0 +1,21 @@
+%basicos{
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@mixin setFlex($dir,$alignH, $alignV) {
+    display: flex;
+    flex-direction: $dir;
+
+    @if ($dir == row){
+        justify-content: $alignH;
+        align-content:  $alignV;
+    } @else{
+        justify-content: $alignV;
+        align-content: $alignH;
+    }
+}
